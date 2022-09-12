@@ -6,13 +6,9 @@ import MainUpperContainer from './Components/MainUpperContainer'
 import axios from 'axios'
 import {apiRoutes} from './Api/routes'
 import LOGO from './assets/logo_medium.png'
+import DESCRIPTION2 from './assets/description.png'
 import WAVEFORM from './assets/waveform.png'
-import {
-    DEFAULT_SETTINGS,
-    ERROR_PROMPT,
-    DESCRIPTION,
-    PROMPT_BY_REQUEST_STATUS,
-} from './constants/app_constants'
+import {DEFAULT_SETTINGS, ERROR_PROMPT, PROMPT_BY_REQUEST_STATUS,} from './constants/app_constants'
 
 export const InputContext = createContext()
 
@@ -73,7 +69,7 @@ const App = () => {
     return (
         <Container>
             {showAdvancedSettings && (
-                <DescriptionText> {DESCRIPTION}</DescriptionText>
+                <DescriptionPng src={DESCRIPTION2}/>
             )}
             <Page>
                 <Logo src={LOGO} />
@@ -155,7 +151,7 @@ const WaveForm = styled.img`
             transform: scale(2, 0.5);
         `};
 `
-const DescriptionText = styled.div`
+const DescriptionPng = styled.img`
     justify-content: flex-start;
-    max-width: 30%;
+    max-width: 35%;
 `
