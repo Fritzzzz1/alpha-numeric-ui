@@ -58,7 +58,7 @@ const LinkRow = styled.div`
     justify-content: space-around;
     margin-top: 20px;
 `
-const IconYT = styled.img`
+export const IconYT = styled.img`
     height: 70px;
     background: transparent;
 `

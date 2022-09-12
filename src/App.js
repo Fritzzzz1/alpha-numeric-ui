@@ -6,7 +6,7 @@ import MainUpperContainer from './Components/MainUpperContainer'
 import axios from 'axios'
 import {apiRoutes} from './Api/routes'
 import LOGO from './assets/logo_medium.png'
-import DESCRIPTION2 from './assets/description.png'
+import DESCRIPTION from './assets/description.png'
 import WAVEFORM from './assets/waveform.png'
 import {DEFAULT_SETTINGS, ERROR_PROMPT, PROMPT_BY_REQUEST_STATUS,} from './constants/app_constants'
 
@@ -69,7 +69,7 @@ const App = () => {
     return (
         <Container>
             {showAdvancedSettings && (
-                <DescriptionPng src={DESCRIPTION2}/>
+                <DescriptionPng src={DESCRIPTION}/>
             )}
             <Page>
                 <Logo src={LOGO} />
@@ -88,7 +88,7 @@ const App = () => {
                     <MainUpperContainer
                         error={error}
                         resetError={resetError}
-                        isready={ready}
+                        isReady={ready}
                         isShowSettings={showAdvancedSettings}
                         doShowSettings={doShowSettings}
                         dontShowSettings={dontShowSettings}

@@ -9,7 +9,7 @@ import PlayArea from './PlayArea/Components/PlayArea'
 const MainUpperContainer = ({
     error,
     resetError,
-    isready,
+    isReady,
     isShowSettings,
     doShowSettings,
     dontShowSettings,
@@ -18,7 +18,7 @@ const MainUpperContainer = ({
         return error ? <ErrorArea>{error}</ErrorArea> : null
     }
 
-    if (isready) {
+    if (isReady) {
         return (
             <Container>
                 <PlayArea />
